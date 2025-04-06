@@ -1,0 +1,156 @@
+/* Wrapper for Centering */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  padding: 20px;
+}
+
+/* Glassmorphism Register Card */
+.register-card {
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(10px); */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 380px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Typography */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.register-subtext {
+  font-size: 14px;
+  color: #f3f3f3;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field::placeholder {
+  color: #f3f3f3;
+}
+
+.input-field:focus {
+  border: 1px solid #36d1dc;
+  outline: none;
+}
+
+/* Password Field */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+/* Error Message */
+.error-text {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Submit Button */
+.register-btn {
+  width: 100%;
+  background: #4dafdc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #16a0db;
+}
+
+.register-btn:disabled {
+  background: #88d3de;
+  cursor: not-allowed;
+}
+
+/* Login Link */
+.login-text {
+  font-size: 14px;
+  margin-top: 15px;
+  color: white;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #ffebeb;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
